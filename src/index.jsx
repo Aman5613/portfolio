@@ -108,12 +108,6 @@ export const projects = [
         link: "https://aman5613.github.io/arik/"
     },
     {
-        title : "Protffolio ",
-        description: "A personal portfolio website to showcase skills, experience, and completed projects.",
-        image : "assets/project-portfolio.png",
-        link : "https://aman5613.github.io/portf/"
-    },
-    {
         title : "Lazarev- Design Agency",
         description: "A creative agency landing page focused on engaging visuals and user experience.",
         image : "assets/project-lazarev.png",
