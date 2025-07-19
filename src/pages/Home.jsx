@@ -32,10 +32,6 @@ export default function Home() {
                 sequence={[
                   'I am Aman Gupta',
                   1000,
-                  // 'I am a Web Developer',
-                  // 1000,
-                  // 'I am a UI/UX Designer',
-                  // 1000,
                 ]}
                 speed={10}
                 style={{ fontWeight:600 }}
@@ -69,7 +65,7 @@ contributing to a development team as an intern and growing through practical ex
           </motion.p>
 
           <motion.div
-            className="flex items-center gap-x-5 mt-10 lg:mt-14"
+            className=" w-full flex items-center justify-between mt-10 lg:mt-14"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}

@@ -1,45 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
 import { skills } from "..";
 
 export default function Skills() {
 
-  
-  // const [skills] = useState([
-  //   { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
-  //   { id: 2, name: "React", icon: <FaReact size={50} /> },
-  //   { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-  //   { id: 4, name: "Python", icon: <FaPython size={50} /> },
-  //   { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-  //   { id: 6, name: "Java", icon: <FaJava size={50} /> },
-  //   // { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-  //   // { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
-  //   { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-  //   { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
-  // ]);
-
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "UEM Jaipur",
+      role: "AceHack 4.0 - Hackathon Participant",
+      period: "April 29-30, 2025",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
-    },
-    {
-      id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
-      description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "Participated in a 48-hour hackathon where we built a chatbot that answers queries based on user-provided data. I worked on both the frontend (React, Tailwind CSS) and backend (Node.js, Express.js), and helped integrate Botpress for chatbot functionality. The experience enhanced my skills in full-stack development and real-time problem-solving under pressure.",
+      logo: "/assets/acehack-logo.png",
     },
   ]);
 

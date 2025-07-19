@@ -3,10 +3,9 @@ import { IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { SiExpress, SiLeetcode } from "react-icons/si";
-import { DiCss3, DiGithub, DiGithubAlt, DiHtml5, DiJava, DiJavascript, DiMongodb, DiPython, DiReact } from "react-icons/di";
+import { DiCss3,  DiHtml5, DiJavascript,  DiPython, DiReact } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { CgFramer } from "react-icons/cg";
-import { FiGithub } from "react-icons/fi";
 import { ImGithub } from "react-icons/im";
 import { FaJava } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
@@ -91,33 +90,45 @@ export const skills = [
 
 export const projects = [
     {
+        title : "VirtualR - React Project",
+        description: "A cryptocurrency dashboard built with React, featuring real-time price updates and interactive analytics charts.",
+        image : "assets/project-virtualR.png",
+        link : "https://virtual-r-alpha-steel.vercel.app/"
+    },
+    {
         title: "Fylla - Digital Agency",
-        description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+        description: "A digital agency website with modern design, smooth animations, and fully responsive layouts.",
         image: "assets/project-fylla.png",
         link: "https://aman5613.github.io/FYLLA/"
     },
     {
-        tittle: "Arik Web Designer",
-        description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+        title: "Arik - Web Designer",
+        description: "A web designer’s portfolio site highlighting projects, skills, and a distinctive user interface.",
         image: "assets/project-arik.png",
         link: "https://aman5613.github.io/arik/"
     },
     {
-        tittle : "Protffolio",
-        description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+        title : "Protffolio ",
+        description: "A personal portfolio website to showcase skills, experience, and completed projects.",
         image : "assets/project-portfolio.png",
         link : "https://aman5613.github.io/portf/"
     },
     {
-        tittle : "Lazarev",
-        description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+        title : "Lazarev- Design Agency",
+        description: "A creative agency landing page focused on engaging visuals and user experience.",
         image : "assets/project-lazarev.png",
         link : "https://aman5613.github.io/design-agency/"
     },
     {
-        tittle : "Cynthia Ugwa - Product Designer",
-        description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+        title : "Cynthia Ugwa - Product Designer",
+        description: "A product designer’s portfolio featuring case studies, project galleries, and a clean layout.",
         image : "assets/project-cynthia.png",
         link : "https://aman5613.github.io/Product-Designer/"
+    },
+    {
+        title : "Foodify - API calling",
+        description: "A food delivery web app with menu browsing, order placement, and an intuitive interface.",
+        image : "assets/project-foodify.png",
+        link : "https://foodify-lilac.vercel.app/"
     },
 ]

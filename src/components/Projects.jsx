@@ -1,24 +1,9 @@
-import React from 'react';
 import { TbExternalLink } from "react-icons/tb";
 import { motion } from 'framer-motion';
 import { projects } from '..';
+import { DiGithubAlt } from "react-icons/di";
+import { BsGithub } from "react-icons/bs";
 
-// const projects = [
-//   {
-//     id: 1,
-//     title: "Crypto Screener Application",
-//     description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
-//     image: "/assets/project1.png",
-//     link: "#"
-//   },
-//   {
-//     id: 2,
-//     title: "Stock Market Dashboard",
-//     description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-//     image: "/assets/project1.png",
-//     link: "#"
-//   }
-// ];
 
 export default function Projects() {
   return (
@@ -51,15 +36,16 @@ export default function Projects() {
               </h2>
               <p className="font-bold text-white text-xl lg:text-3xl">{project.title}</p>
 
-              <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
-                {project.description}
-              </p>
+              <p className="font-light text-sm/6 lg:text-base text-[#71717A]">{project.description}</p>
+
               <a href={project.link} className="text-white mt-3 block" target="_blank" rel="noopener noreferrer">
                 <TbExternalLink size={23} />
               </a>
             </div>
           </motion.div>
         ))}
+
+        <p className="text-white text-center opacity-70 tracking-widest">.....more on <a href="https://github.com/Aman5613" className="underline font-bold tracking-tighter">GitHub</a></p>
       </div>
     </div>
   );

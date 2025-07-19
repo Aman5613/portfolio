@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function About() {
   return (
-    <div className="px-5 lg:px-28 flex justify-between flex-col lg:flex-row" id="about">
+    <div className="px-5 lg:px-28 flex justify-between  flex-col gap-5 lg:flex-row" id="about">
       <motion.div
         className="lg:w-1/2"
         initial={{ opacity: 0, x: -50 }}
@@ -26,16 +25,25 @@ export default function About() {
         </h2>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-5 lg:mt-10">
-          I'm a passionate full-stack developer specializing in **React.js & Node.js**. I thrive on blending technical expertise with sleek UI/UX design to build high-performing, user-friendly applications.
+          Hello! I'm Aman Gupta, a passionate and driven developer with hands-on experience in building small-scale web projects. My expertise spans across front-end and back-end technologies, with proficiency in Java, JavaScript, C, C++, Python, and a particular focus on web development frameworks like React.js and styling tools such as Tailwind CSS.        </p>
+
+        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+          Currently, I'm pursuing a B.Tech in Computer Science and Engineering (Data Science) at RGPV, Bhopal. I'm exploring the MERN stack, gaining knowledge in Node.js, Express.js, and MongoDB, while actively contributing to open-source projects and hackathons.        </p>
+
+        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
+        Some highlights about me:
+        <ol>
+          <li>- Skilled in HTML, CSS, JavaScript, React.js, Tailwind CSS, Framer and GSAP</li>
+          <li>- Experienced with Git, GitHub, VS Code, Chrome DevTools, and deployment on Vercel and GitHub Pages</li>
+          <li>- Comfortable with tools like npm, Redux, Redux Toolkit, JSON, and Figma</li>
+          <li>- Developed projects including an AI ChatBot and a responsive landing page UI</li>
+          <li>- Achieved 200+ Data Structure & Algorithm problems solved on LeetCode</li>
+        </ol>
         </p>
 
         <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          My web development journey started in **2015**, and since then, I've continuously evolved, taking on new challenges and keeping up with the latest technologies. Today, I build **cutting-edge web applications** using **Next.js, TypeScript, NestJS, TailwindCSS, Supabase, and more**.
-        </p>
+          Beyond academics and coding, I've earned recognition in national-level hackathons and competitions, demonstrating my commitment to practical learning, teamwork, and excellence. I am always eager to join development teams as an intern, learn from experienced mentors, and contribute meaningfully to impactful projects.        </p>
 
-        <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Beyond coding, I enjoy sharing insights on **Twitter**, engaging with **Indie Hackers**, and following the journey of **early-stage startups**. Feel free to follow me on **Twitter** or check out my projects on **GitHub**.
-        </p>
       </motion.div>
     </div>
   );

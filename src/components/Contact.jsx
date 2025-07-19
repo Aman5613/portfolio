@@ -1,8 +1,5 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { BiLogoGmail } from 'react-icons/bi';
-import { BsGithub } from 'react-icons/bs';
-import { IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5';
 import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import { icons_links } from '..';
@@ -29,7 +26,7 @@ export default function Contact() {
         Contact <span className='font-extrabold'>Me</span>
       </motion.h2>
 
-      <div className='flex justify-between  mt-8 lg:mt-16 flex-col lg:flex-row'>
+      <div className='flex justify-between  mt-8 lg:mt-16 flex-col gap-5 lg:gap-14'>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { opacity: 0 }}
@@ -43,19 +40,19 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
               className='flex justify-between gap-3 lg:gap-5 flex-col lg:flex-row'
             >
-              <motion.button
+              <motion.div
                 whileHover={{ scale: 1.05 }}
-                // type='submit'
                 className='bg-black justify-center w-fit lg:w-auto lg:flex-1 hover:shadow-lg text-white px-3 py-2 rounded flex items-center gap-x-3 font-medium'
               >
                 Get In Touch
-              </motion.button>
+              </motion.div>
 
               <div className='flex items-center gap-x-2 lg:gap-x-5'>
                 {icons_links.map((Icon, index) => (
                   <motion.a
                     key={index}
                     href={Icon.link}
+                    target='_blank'
                     className="bg-white p-2 lg:p-3 rounded border-2 border-black"
                     whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
                     whileTap={{ scale: 0.9 }}
