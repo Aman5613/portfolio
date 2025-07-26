@@ -90,6 +90,7 @@ export const skills = [
     {
         icon : TbBrandRedux ,
         name : "Redix"
+    },
 ]
 
 export const projects = [
