@@ -9,6 +9,7 @@ import { CgFramer } from "react-icons/cg";
 import { ImGithub } from "react-icons/im";
 import { FaJava } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
+import { TbBrandRedux } from "react-icons/tb";
 
 export const icons_links = [
     {
@@ -85,7 +86,10 @@ export const skills = [
     {
         icon: SiExpress,
         name: "Express"
-    }
+    },
+    {
+        icon : TbBrandRedux ,
+        name : "Redix"
 ]
 
 export const projects = [
