@@ -1,25 +1,31 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { skills } from "..";
 
 export default function Skills() {
-
-  const [experiences] = useState([
+  const experiences = [
     {
       id: 1,
-      company: "UEM Jaipur",
-      role: "AceHack 4.0 - Hackathon Participant",
-      period: "April 29-30, 2025",
+      company: "KVF Startup & PKSM Pizza",
+      role: "Technical Manager",
+      period: "2026 - Present",
       description:
-        "Participated in a 48-hour hackathon where we built a chatbot that answers queries based on user-provided data. I worked on both the frontend (React, Tailwind CSS) and backend (Node.js, Express.js), and helped integrate Botpress for chatbot functionality. The experience enhanced my skills in full-stack development and real-time problem-solving under pressure.",
-      logo: "/assets/acehack-logo.png",
+        "Directed operations and built the core technical infrastructure for a scalable food delivery platform using React.js, Node.js, MongoDB, RBAC, REST APIs, WebSockets, and secure payment integration.",
+      logo: null,
     },
-  ]);
+    {
+      id: 2,
+      company: "Training and Placement Cell, RGPV",
+      role: "Technical Web Contributor",
+      period: "2025",
+      description:
+        "Maintained and contributed to the university placement cell web platforms, coordinating with administrative staff and developers to keep the user experience smooth for students.",
+      logo: null,
+    },
+  ];
 
   return (
     <div className="mt-3 lg:mt-16" id="skills">
       <div className="px-5 lg:px-28">
-
         <motion.h2
           className="text-2xl lg:text-4xl text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -30,23 +36,32 @@ export default function Skills() {
           My <span className="font-extrabold">Skills</span>
         </motion.h2>
 
+        <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-neutral-600 lg:text-base">
+          Core tools and technologies reflected in my resume, focused on
+          full-stack development, deployment, and modern web application
+          workflows.
+        </p>
+
         {/* Skill Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 text-lg font-bold mt-7 lg:mt-16 w-full place-items-center gap-y-6 lg:gap-y-12">
-          {skills.map((skill) => (
+        <div className="mt-7 grid w-full grid-cols-2 place-items-center gap-5 gap-y-6 text-lg font-bold md:grid-cols-4 lg:mt-16 lg:grid-cols-5 lg:gap-y-12">
+          {skills.map((skill, index) => (
             <motion.div
-              key={skill.id}
-              className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
+              key={skill.name}
+              className="flex h-36 w-36 cursor-pointer flex-col items-center justify-center gap-4 rounded-2xl border border-black bg-white p-3 text-center transition-all hover:-translate-y-1 hover:bg-black hover:text-white lg:h-44 lg:w-44"
               initial={{ opacity: 0, y: 5 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: skill.id * 0.1 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: index * 0.08,
+              }}
               viewport={{ once: true }}
             >
-              <skill.icon size={50}/>
+              <skill.icon size={50} />
               <p>{skill.name}</p>
             </motion.div>
           ))}
         </div>
-
       </div>
 
       {/* Experience Section */}
@@ -61,12 +76,17 @@ export default function Skills() {
           My <span className="font-extrabold">Experience</span>
         </motion.h2>
 
+        <p className="mx-auto mt-3 max-w-2xl px-5 text-center text-sm text-zinc-400 lg:px-0 lg:text-base">
+          Selected work, volunteer, and hackathon experience pulled from the
+          resume.
+        </p>
+
         {/* Experience Cards */}
         <div className="px-5 lg:px-28 my-8 lg:mt-16 space-y-10">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
+              className="cursor-pointer rounded-2xl border border-[#3f3f46] bg-black p-5 transition-all hover:bg-[#18181b]"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
@@ -79,7 +99,21 @@ export default function Skills() {
             >
               <div className="flex justify-between flex-col items-start lg:flex-row lg:items-center">
                 <div className="flex items-center gap-5">
-                  <img className="w-7" src={exp.logo} alt="" />
+                  {exp.logo ? (
+                    <img
+                      className="w-8 rounded-full bg-white/5 p-1"
+                      src={exp.logo}
+                      alt=""
+                    />
+                  ) : (
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-600 text-xs font-semibold text-white">
+                      {exp.company
+                        .split(" ")
+                        .slice(0, 2)
+                        .map((word) => word[0])
+                        .join("")}
+                    </div>
+                  )}
                   <h2 className="font-semibold text-white text-lg lg:text-xl">
                     {exp.role} at {exp.company}
                   </h2>
@@ -94,7 +128,6 @@ export default function Skills() {
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );

@@ -1,8 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="px-5 lg:px-28 flex justify-between  flex-col gap-5 lg:flex-row" id="about">
+    <div
+      className="px-5 lg:px-28 flex justify-between  flex-col gap-5 lg:flex-row"
+      id="about"
+    >
       <motion.div
         className="lg:w-1/2"
         initial={{ opacity: 0, x: -50 }}
@@ -25,25 +28,49 @@ export default function About() {
         </h2>
 
         <p className="text-[#464646] text-sm/6 lg:text-base mt-5 lg:mt-10">
-Hi, I'm Aman Gupta — a passionate web developer and CSE (Data Science) student at RGPV, Bhopal. I enjoy building clean, responsive websites using technologies like React.js, Tailwind CSS, and the MERN stack. I'm also skilled in Java, JavaScript, Python, and have solved 200+ DSA problems on LeetCode.        </p>
-
-        {/* <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Currently, I'm pursuing a B.Tech in Computer Science and Engineering (Data Science) at RGPV, Bhopal. I'm exploring the MERN stack, gaining knowledge in Node.js, Express.js, and MongoDB, while actively contributing to open-source projects and hackathons.        </p> */}
-
-        <p className="text-[#464646] text-sm/6 lg:text-base mt-3 lg:mt-5">
-        Some highlights about me:
-        <ol>
-          <li>- Skilled in HTML, CSS, JavaScript, React.js, Tailwind CSS, Framer and GSAP</li>
-          <li>- Experienced with Git, GitHub, VS Code, Chrome DevTools, and deployment on Vercel and GitHub Pages</li>
-          <li>- Comfortable with tools like npm, Redux, Redux Toolkit, JSON, and Figma</li>
-          <li>- Developed projects including an AI ChatBot and a responsive landing page UI</li>
-          <li>- Achieved 200+ Data Structure & Algorithm problems solved on LeetCode</li>
-        </ol>
+          I'm Aman Gupta, a Computer Science student specializing in Data
+          Science at RGPV, Bhopal. I focus on full-stack web development and
+          software engineering, with hands-on experience building MERN-stack
+          applications, AI-powered projects, and production-ready interfaces.
         </p>
 
-        {/* <p className="text-[#71717A] text-sm/6 lg:text-base mt-3 lg:mt-5">
-          Beyond academics and coding, I've earned recognition in national-level hackathons and competitions, demonstrating my commitment to practical learning, teamwork, and excellence. I am always eager to join development teams as an intern, learn from experienced mentors, and contribute meaningfully to impactful projects.        </p> */}
+        <p className="text-[#464646] text-sm/6 lg:text-base mt-3 lg:mt-5">
+          I enjoy turning ideas into practical products with React.js, Node.js,
+          Express.js, MongoDB, Tailwind CSS, and modern AI tools like RAG,
+          vector databases, and LLM integrations.
+        </p>
 
+        <div className="mt-4 lg:mt-6">
+          <p className="text-[#464646] text-sm/6 lg:text-base font-medium">
+            A few things that define my work:
+          </p>
+          <ul className="mt-3 space-y-2 text-[#464646] text-sm/6 lg:text-base list-disc pl-5">
+            <li>
+              Built full-stack projects with React.js, Node.js, Express.js,
+              MongoDB, Socket.io, and secure payment or authentication flows.
+            </li>
+            <li>
+              Worked as a Technical Manager at KVF Startup &amp; PKSM Pizza and
+              as a Technical Web Contributor for the RGPV Training and Placement
+              Cell.
+            </li>
+            <li>
+              Solved 200+ DSA problems on LeetCode and keep sharpening
+              problem-solving through consistent practice and GitHub
+              contributions.
+            </li>
+            <li>
+              Comfortable with deployment, version control, and tools like Git,
+              GitHub, Vercel, npm, Figma, and Chrome DevTools.
+            </li>
+          </ul>
+        </div>
+
+        <p className="text-[#464646] text-sm/6 lg:text-base mt-3 lg:mt-5">
+          I’m currently looking to grow through challenging internship or
+          product roles where I can contribute to meaningful software and learn
+          from strong engineering teams.
+        </p>
       </motion.div>
     </div>
   );

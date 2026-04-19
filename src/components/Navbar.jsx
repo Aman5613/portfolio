@@ -32,8 +32,9 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed lg:px-28 px-5 top-0 left-0 w-full z-50 bg-white p-5 transition-shadow duration-300 ${hasShadow ? "shadow-md" : "shadow-none"
-        }`}
+      className={`fixed lg:px-28 px-5 top-0 left-0 w-full z-50 bg-white p-5 transition-shadow duration-300 ${
+        hasShadow ? "shadow-md" : "shadow-none"
+      }`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.img
@@ -41,7 +42,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
           className="h-9 cursor-pointer"
-          src="public\assets\port-ic-bgrr.png"
+          src="https://ik.imagekit.io/6i2qiqf2n/resume/logo.png"
           alt="Logo"
         />
 
@@ -64,7 +65,7 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href="https://drive.google.com/file/d/1c42ggdbkOa5SPZo68Yf5NhI_I3864e7q/view?usp=drivesdk"
+          href="https://ik.imagekit.io/6i2qiqf2n/Aman_Resume.pdf"
           target="_blank"
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
         >

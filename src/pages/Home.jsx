@@ -4,16 +4,14 @@ import { icons_links } from "..";
 
 export default function Home() {
   return (
-    <div className='lg:my-16 lg:px-28 my-8 px-5 mt-20' id="home">
+    <div className="lg:my-16 lg:px-28 my-8 px-5 mt-20" id="home">
       <div className="flex justify-between py-10 items-center px-5 lg:px-28 lg:flex-row flex-col-reverse">
-
         <motion.div
           className="lg:w-[45%]"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-
           <motion.div
             className="text-2xl lg:text-5xl flex flex-col mt-8  lg:mt-0 gap-2 lg:gap-5 text-nowrap"
             initial="hidden"
@@ -27,19 +25,27 @@ export default function Home() {
               },
             }}
           >
-            <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              Hello, <TypeAnimation
-                sequence={[
-                  'I am Aman Gupta',
-                  1000,
-                ]}
+            <motion.h2
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              Hello,{" "}
+              <TypeAnimation
+                sequence={["I am Aman K. Gupta", 1000]}
                 speed={10}
-                style={{ fontWeight:600 }}
+                style={{ fontWeight: 600 }}
                 repeat={Infinity}
               />
             </motion.h2>
-            <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
-              <span className="font-extrabold">Frontend</span>{" "}
+            <motion.h2
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              <span className="font-extrabold">Full Stack</span>{" "}
               <span
                 className="text-white font-extrabold"
                 style={{ WebkitTextStroke: "1px black" }}
@@ -47,7 +53,12 @@ export default function Home() {
                 Developer
               </span>
             </motion.h2>
-            <motion.h2 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}>
+            <motion.h2
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
               Based In <span className="font-extrabold">India.</span>
             </motion.h2>
           </motion.div>
@@ -58,10 +69,16 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            Interested young person with hands-on experience building small-scale web projects using HTML, CSS, JavaScript, and
-React. Currently expanding back-end skills with Node.js and MongoDB as part of the MERN stack journey. Interested in
-contributing to a development team as an intern and growing through practical exposure and mentorship
-
+            Motivated Computer Science student specializing in Full-Stack Web
+            Development and Software Engineering. Proficient in the MERN stack
+            with advanced knowledge of modern AI technologies, including
+            Retrieval-Augmented Generation (RAG), Vector Databases, and LLM
+            integrations. Solved 200+ Data Structures & Algorithms problems on
+            LeetCode and continuously improve problem-solving skills through
+            active GitHub contributions. Passionate about building robust
+            architectures, managing full-cycle project deployments, and
+            contributing to innovative solutions through an SDE or Full-Stack
+            Developer internship.
           </motion.p>
 
           <motion.div
@@ -76,7 +93,11 @@ contributing to a development team as an intern and growing through practical ex
                 href={icon.link}
                 target="_blank"
                 className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                whileHover={{
+                  scale: 1.1,
+                  backgroundColor: "#000",
+                  color: "#fff",
+                }}
                 whileTap={{ scale: 0.9 }}
               >
                 <icon.icon className="w-4 h-4 lg:w-5 lg:h-5" />
@@ -91,7 +112,11 @@ contributing to a development team as an intern and growing through practical ex
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/hero-vector.svg" alt="Hero Vector" />
+          <img
+            className="h-full w-full"
+            src="/assets/hero-vector.svg"
+            alt="Hero Vector"
+          />
         </motion.div>
       </div>
     </div>
