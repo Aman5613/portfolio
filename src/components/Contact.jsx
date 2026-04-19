@@ -90,7 +90,7 @@ export default function Contact() {
               connect2amangupta
             </motion.a>
 
-            <motion.a
+            {/* <motion.a
               whileHover={{ x: 5 }}
               className='flex items-center gap-2 group'
               href="tel:8738038451"
@@ -100,7 +100,7 @@ export default function Contact() {
                 <FaPhone className="w-3 h-3 lg:w-4 lg:h-4" />
               </span>
               8738038451
-            </motion.a>
+            </motion.a> */}
           </div>
         </motion.div>
       </div>

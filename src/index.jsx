@@ -28,10 +28,10 @@ export const icons_links = [
     icon: IoLogoLinkedin,
     link: "https://www.linkedin.com/in/amankumarguptabeginner/",
   },
-  {
-    icon: IoLogoTwitter,
-    link: "https://x.com/aman3779956",
-  },
+  // {
+  //   icon: IoLogoTwitter,
+  //   link: "https://x.com/aman3779956",
+  // },
   {
     icon: BiLogoGmail,
     link: "mailto:connect2amangupta@gmail.com?subject=Hellooo%20Aman%2C%20I%20found%20your%20portfolio!&body=Hi%20aman%2C%0D%0AI%20found%20across%20your%20portfolio%20and%20wanted%20to%20reach%20out.%0D%0AI'm%20%7Byour%20name%7D%2C%0D%0A%7Bwrite%20your%20message%20for%20aman%7D",
@@ -44,14 +44,14 @@ export const icons_links = [
     icon: SiLeetcode,
     link: "https://leetcode.com/u/Aman_5613/",
   },
-  {
-    icon: BsWhatsapp,
-    link: "https://api.whatsapp.com/send?phone=918738038451",
-  },
-  {
-    icon: BsInstagram,
-    link: "https://instagram.com/amangupta_5613",
-  },
+  // {
+  //   icon: BsWhatsapp,
+  //   link: "https://api.whatsapp.com/send?phone=918738038451",
+  // },
+  // {
+  //   icon: BsInstagram,
+  //   link: "https://instagram.com/amangupta_5613",
+  // },
 ];
 
 export const skills = [
